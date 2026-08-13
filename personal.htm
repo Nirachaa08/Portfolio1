@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - Portfolio1</title>
+    <script src="https://tailwindcss.com"></script>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>body { font-family: 'Kanit', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+
+    <!-- แถบเมนูด้านบน -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 px-4 py-3 shadow-2xs">
+        <div class="max-w-3xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-sky-600 text-lg">Portfolio1</span>
+            <div class="flex gap-4 text-sm font-medium">
+                <a href="index.htm" class="text-slate-500 hover:text-sky-500 transition">หน้าแรก</a>
+                <a href="personal.htm" class="text-sky-600 border-b-2 border-sky-500 pb-1">ประวัติส่วนตัว</a>
+                <a href="education.htm" class="text-slate-500 hover:text-sky-500 transition">ประวัติการศึกษา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- เนื้อหา -->
+    <main class="max-w-2xl mx-auto px-4 py-10">
+        <div class="bg-white rounded-3xl shadow-xs border border-slate-100 p-8">
+            <h2 class="text-2xl font-bold text-sky-800 border-b-2 border-sky-100 pb-3 mb-6 flex items-center gap-2">
+                👤 ข้อมูลส่วนตัว (Personal Profile)
+            </h2>
+
+            <div class="space-y-6 text-base text-slate-600">
+                <!-- ข้อมูลทั่วไป -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p><strong>ชื่อ-นามสกุล:</strong> [นางสาว นีรชา ช่างทำ]</p>
+                    <p><strong>วันเกิด:</strong> [ใส่ เช่น 6 สิงหาคม 2551]</p>
+                    <p><strong>อายุ:</strong> [18] ปี</p>
+                    <p><strong>สัญชาติ/เชื้อชาติ:</strong> ไทย / ไทย</p>
+                </div>
+
+                <!-- ทักษะเด่นด้านขวา -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-lg mb-1">💡 ความสามารถพิเศษ</h3>
+                        <p class="bg-sky-50/50 p-3 rounded-xl border border-sky-100/30 text-sm">[ทักษะการเข้าใจตัวเลข การคิดคำนวณรวดเร็ว และการใช้เหตุผลเชิงตรรกะเพื่อแก้ปัญหา]</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-lg mb-1">🎨 งานอดิเรก</h3>
+                        <p class="bg-pink-50/50 p-3 rounded-xl border border-pink-100/30 text-sm">[วาดรูป และเล่นกีฬา]</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-lg mb-1">⭐ ความสนใจ</h3>
+                        <p class="bg-purple-50/50 p-3 rounded-xl border border-purple-100/30 text-sm">[คุณครู คณิตศาสตร์]</p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h3 class="font-semibold text-pink-600 text-lg mb-1">🩺 ความใฝ่ฝัน</h3>
+                        <div class="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-4 rounded-xl shadow-xs">
+                            <p class="font-medium text-sm md:text-base">
+                                "เข้าศึกษาต่อในคณะครุศาสตร์ และประกอบวิชาคณิตศาสตร์"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
