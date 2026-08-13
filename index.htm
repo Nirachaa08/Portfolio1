@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - Portfolio1</title>
+    <script src="https://tailwindcss.com"></script>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+        /* เอฟเฟกต์พื้นหลังไล่สีขยับได้ (Animated Gradient) */
+        .animated-bg {
+            background: linear-gradient(-45deg, #e0f2fe, #fdf2f8, #f8fafc, #bae6fd);
+            background-size: 400% 400%;
+            animation: gradientAnimation 12s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="animated-bg min-h-screen flex flex-col justify-between">
+
+    <!-- ส่วนหัว / แบนเนอร์ -->
+    <header class="w-full text-center pt-10 px-4">
+        <div class="bg-white/80 backdrop-blur-md max-w-2xl mx-auto py-6 px-8 rounded-2xl shadow-sm border border-white/50">
+            <h1 class="text-2xl md:text-3xl font-bold text-sky-800 tracking-wide">
+                ✨ ยินดีต้อนรับสู่เว็บไซต์ Portfolio1 ✨
+            </h1>
+        </div>
+    </header>
+
+    <!-- เนื้อหาหลัก -->
+    <main class="flex-grow flex items-center justify-center px-4 py-8">
+        <div class="bg-white/90 backdrop-blur-lg max-w-md w-full p-8 rounded-3xl shadow-xl border border-white/60 text-center">
+            
+            <!-- รูปถ่ายนักเรียน (เปลี่ยน URL ใน src เป็นรูปตัวเองได้เลย) -->
+            <div class="relative w-36 h-36 mx-auto mb-6">
+                <img src="https://unsplash.com" 
+                     alt="รูปถ่ายนักเรียน" 
+                     class="w-full h-full rounded-full object-cover border-4 border-sky-200 shadow-md">
+            </div>
+
+            <!-- ข้อมูลนักเรียน -->
+            <h2 class="text-2xl font-semibold text-slate-800 mb-1">[นางสาว นีรชา ช่างทำ]</h2>
+            <p class="text-sky-600 text-sm font-medium mb-4">ชั้นมัธยมศึกษาปีที่ [6/3] | โรงเรียน[พานทอง]</p>
+            
+            <!-- คติประจำใจ / คำแนะนำตัวสั้นๆ -->
+            <div class="bg-sky-50/60 p-4 rounded-xl border border-sky-100/50 mb-8">
+                <p class="text-slate-600 text-sm leading-relaxed italic">
+                    "คติประจำใจ: [ความสุขอยู่ระหว่างทาง หาใช่ที่จุดหมายปลายทาง]"
+                </p>
+            </div>
+
+            <!-- ปุ่มเข้าสู่หน้าต่างๆ -->
+            <div class="space-y-3">
+                <a href="personal.htm" class="block w-full py-3 bg-gradient-to-r from-sky-400 to-sky-500 hover:from-sky-500 hover:to-sky-600 text-white font-medium rounded-xl shadow-md shadow-sky-100 transition transform hover:-translate-y-0.5">
+                    👤 ดูประวัติส่วนตัว
+                </a>
+                <a href="education.htm" class="block w-full py-3 bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-medium rounded-xl shadow-md shadow-pink-100 transition transform hover:-translate-y-0.5">
+                    🎓 ดูประวัติการศึกษา
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ส่วนท้าย -->
+    <footer class="text-center py-4 text-xs text-slate-400 bg-white/40 backdrop-blur-xs">
+        © 2026 Portfolio1 - พัฒนาด้วยความมุ่งมั่นสู่วิชาคุณครู
+    </footer>
+
+</body>
+</html>
