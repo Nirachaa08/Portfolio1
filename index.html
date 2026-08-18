@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - Portfolio</title>
+    <meta name="description" content="เว็บไซต์ Portfolio ของ นางสาวนีรชา ช่างทำ นักเรียนโรงเรียนพานทอง">
+    <meta name="keywords" content="นีรชา ช่างทำ, พานทอง, Portfolio, แฟ้มสะสมผลงาน">
+    <meta name="author" content="นีรชา ช่างทำ">
+    <script src="https://tailwindcss.com"></script>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body { font-family: 'Mitr', sans-serif; background-color: #E0F2FE; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <span class="text-sky-500 font-bold text-lg">My Portfolio ✨</span>
+            <div class="space-x-2">
+                <a href="index.html" class="bg-sky-400 text-white px-3 py-1.5 rounded-full text-sm shadow-sm hover:bg-sky-500 transition">หน้าแรก</a>
+                <a href="profile.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">ครูชมพูนุท</a>
+                <a href="personal.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">ประวัติส่วนตัว</a>
+                <a href="education.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">การศึกษา</a>
+                <a href="activities.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">ผลงาน</a>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-4xl mx-auto my-10 p-6 w-full flex-grow flex flex-col items-center justify-center text-center">
+        <div class="bg-white/90 p-10 rounded-3xl shadow-xl border-4 border-sky-200 max-w-2xl w-full">
+            <img src="https://unsplash.com" alt="Avatar" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-sky-300 shadow-md object-cover">
+            <h1 class="text-3xl font-bold text-sky-600 mb-2">นางสาวนีรชา ช่างทำ</h1>
+            <p class="text-lg text-slate-600 mb-2">ชั้นเรียน: มัธยมศึกษาปีที่ 6/3</p>
+            <p class="text-md text-sky-500 font-medium mb-6">โรงเรียนพานทอง</p>
+            <div class="bg-sky-50 p-4 rounded-2xl border border-sky-100 inline-block mb-8">
+                <p class="text-slate-700 italic">" คติประจำใจ: ความพยายามไม่เคยทรยศใคร ถ้าเราตั้งใจจริง 🌟 "</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 max-w-md mx-auto">
+                <a href="profile.html" class="bg-pink-100 hover:bg-pink-200 text-pink-700 py-3 px-4 rounded-2xl shadow-sm border border-pink-200 transition transform hover:-translate-y-1 font-medium">🌸 โปรไฟล์ครูผู้สอน</a>
+                <a href="personal.html" class="bg-amber-100 hover:bg-amber-200 text-amber-700 py-3 px-4 rounded-2xl shadow-sm border border-amber-200 transition transform hover:-translate-y-1 font-medium">🧸 ประวัติส่วนตัว</a>
+                <a href="education.html" class="bg-emerald-100 hover:bg-emerald-200 text-emerald-700 py-3 px-4 rounded-2xl shadow-sm border border-emerald-200 transition transform hover:-translate-y-1 font-medium">📚 ประวัติการศึกษา</a>
+                <a href="activities.html" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 py-3 px-4 rounded-2xl shadow-sm border border-indigo-200 transition transform hover:-translate-y-1 font-medium">🏆 ผลงานและกิจกรรม</a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-sky-200 text-center py-4 text-sky-800 text-sm">
+        © 2026 Chomphunut Boonrot. All Rights Reserved.
+    </footer>
+</body>
+</html>
