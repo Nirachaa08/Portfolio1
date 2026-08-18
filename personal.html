@@ -3,55 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว - Portfolio</title>
+    <title>ประวัติส่วนตัว - แฟ้มสะสมผลงาน</title>
     <script src="https://tailwindcss.com"></script>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: 'Mitr', sans-serif; background-color: #E0F2FE; }
+        body { font-family: 'Sarabun', sans-serif; background-color: #FFFFFF; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between">
-    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 px-6 py-4">
+<body class="min-h-screen flex flex-col justify-between text-slate-900">
+
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 px-6 py-4">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <span class="text-sky-500 font-bold text-lg">My Portfolio ✨</span>
-            <div class="space-x-2">
-                <a href="index.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">หน้าแรก</a>
-                <a href="profile.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">นักเรียนนีรชา</a>
-                <a href="personal.html" class="bg-sky-400 text-white px-3 py-1.5 rounded-full text-sm shadow-sm hover:bg-sky-500 transition">ประวัติส่วนตัว</a>
-                <a href="education.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">การศึกษา</a>
-                <a href="activities.html" class="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-sm hover:bg-sky-200 transition">ผลงาน</a>
+            <span class="font-bold text-md tracking-wider">PORTFOLIO</span>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="index.html" class="text-slate-500 hover:text-slate-900 transition">หน้าแรก</a>
+                <a href="profile.html" class="text-slate-500 hover:text-slate-900 transition">ข้อมูลของฉัน</a>
+                <a href="personal.html" class="text-slate-900 border-b-2 border-slate-900 pb-1">ประวัติส่วนตัว</a>
+                <a href="education.html" class="text-slate-500 hover:text-slate-900 transition">ประวัติการศึกษา</a>
+                <a href="activities.html" class="text-slate-500 hover:text-slate-900 transition">ผลงานและกิจกรรม</a>
             </div>
         </div>
     </nav>
-    <main class="max-w-4xl mx-auto my-10 p-6 w-full flex-grow">
-        <div class="bg-white/90 p-8 rounded-3xl shadow-xl border-4 border-sky-200">
-            <h2 class="text-2xl font-bold text-sky-600 mb-6 text-center border-b-2 border-sky-100 pb-2">🧸 ข้อมูลประวัติส่วนตัว</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-sky-50/50 p-4 rounded-2xl border border-sky-100">
-                    <p class="text-sky-600 font-bold text-sm">📅 วันเกิด</p>
-                    <p class="text-slate-700 text-lg">6 สิงหาคม 2551</p>
+
+    <main class="max-w-4xl mx-auto my-12 p-6 w-full flex-grow">
+        <div class="w-full max-w-2xl mx-auto">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 border-b border-slate-900 pb-2">ประวัติส่วนตัว (Personal Information)</h2>
+            
+            <div class="space-y-4 text-base">
+                <div class="flex border-b border-slate-100 py-2">
+                    <span class="w-32 font-bold text-slate-600">วันเกิด</span>
+                    <span class="text-slate-800">6 สิงหาคม พ.ศ. 2551</span>
                 </div>
-                <div class="bg-sky-50/50 p-4 rounded-2xl border border-sky-100">
-                    <p class="text-sky-600 font-bold text-sm">🎂 อายุ</p>
-                    <p class="text-slate-700 text-lg">18 ปี</p>
+                <div class="flex border-b border-slate-100 py-2">
+                    <span class="w-32 font-bold text-slate-600">อายุ</span>
+                    <span class="text-slate-800">18 ปี</span>
                 </div>
-                <div class="bg-sky-50/50 p-4 rounded-2xl border border-sky-100">
-                    <p class="text-sky-600 font-bold text-sm">🎨 งานอดิเรก</p>
-                    <p class="text-slate-700 text-lg">อ่านหนังสือ, วาดรูป, ฟังเพลง</p>
+                <div class="flex border-b border-slate-100 py-2">
+                    <span class="w-32 font-bold text-slate-600">งานอดิเรก</span>
+                    <span class="text-slate-800">วาดรูป, การฟังเพลง</span>
                 </div>
-                <div class="bg-sky-50/50 p-4 rounded-2xl border border-sky-100">
-                    <p class="text-sky-600 font-bold text-sm">💡 ความสนใจ</p>
-                    <p class="text-slate-700 text-lg">เกี่ยวกับคณิตการคำนวณแก้ปัญหา</p>
+                <div class="flex border-b border-slate-100 py-2">
+                    <span class="w-32 font-bold text-slate-600">ความสนใจ</span>
+                    <span class="text-slate-800">เกี่ยวกับคณิตศาสตรืการแก้ปัญหา, ดาราศาตสตร์</span>
                 </div>
-                <div class="bg-sky-50/50 p-4 rounded-2xl border border-sky-100 md:col-span-2">
-                    <p class="text-sky-600 font-bold text-sm">🚀 ความใฝ่ฝัน</p>
-                    <p class="text-slate-700 text-lg text-pink-600 font-medium">อยากเป็นคุณครูคณิตศาสตร์</p>
+                <div class="flex border-b border-slate-100 py-2">
+                    <span class="w-32 font-bold text-slate-600">ความใฝ่ฝัน</span>
+                    <span class="text-slate-800 font-medium">คุณครูคณิตศาสตตร์</span>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="bg-sky-200 text-center py-4 text-sky-800 text-sm">
+
+    <footer class="bg-white border-t border-slate-200 text-slate-500 text-center py-4 text-xs">
         © 2026 Niracha Changtham. All Rights Reserved.
     </footer>
+
 </body>
 </html>
+
